@@ -4,10 +4,11 @@ let buttonEl = document.querySelector(`#searchBtn`);
 let apiKey = `5ab6745ea373fe100ae9cd6aa16bdfa4`;
 let city = cityTextEl.value;
 
+buttonEl.addEventListener('click', citySubmit);
+let citySubmit = function (event) {
+  event.preventDefault();
+};
 
-// $(".saveBtn").on("click", function () {
-    
-// }
 
 
 function getApi(){
@@ -20,3 +21,5 @@ fetch(urlApi)
 }) 
 
 }
+
+getApi();
