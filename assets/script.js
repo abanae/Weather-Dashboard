@@ -6,7 +6,7 @@ let city = cityTextEl.value;
 
 
 let citySubmit = function (event) {
-    buttonEl.addEventListener('click', citySubmit);
+    buttonEl.addEventListener('click', getApi);
   event.preventDefault();
 };
 
@@ -14,10 +14,11 @@ let citySubmit = function (event) {
 
 function getApi(){
 let urlApi = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+console.log(urlApi);
 fetch(urlApi)
 .then(function(response){
     response.json().then(function(data){
-        console.log(data);
+        // console.log(data);
     }
     )
 }) 
