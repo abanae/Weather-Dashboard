@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS & CDN Components  -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
     <title>Weather App</title>
 </head>
+<!-- Header -->
 
 <body>
     <nav class="navbar navbar-light" style="background-color: #bfcaca;">
         <span class="navbar-text w-100 text-center" style="color: black;">Weather Dashboard</span>
     </nav>
-
+    <!-- Main Content -->
     <div class="container">
         <div class="row">
+            <!-- Search input -->
             <div class="col-sm-4 bg-light">
                 <h4 class="pt-1"><strong>Search for a City:</strong></h4>
                 <div class="input-group mb-3">
@@ -30,9 +33,9 @@
                     </div>
                 </div>
                 <ul class="list-group">
-
                 </ul>
             </div>
+            <!-- Current Weather -->
             <div class="col-sm-8">
                 <div class="row ml-2 border border-dark rounded">
                     <div class="col-sm-12" id="current-weather">
@@ -44,7 +47,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- 5 Day Forecast -->
                 <div class="col-sm-12" id="future-weather">
                     <h3>5-Day Forecast:</h3>
                     <div class="row text-light">
@@ -84,7 +87,7 @@
             </div>
         </div>
     </div>
-
+    <!-- Bootstrap Script & Jquery Script Componenets -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/script.js"></script>
