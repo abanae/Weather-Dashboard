@@ -17,10 +17,10 @@ span{
     font-size: 1em;
 }
 
-/* li:hover{
+li:hover{
     background-color: lightslategray;
     text-decoration: underline;
-} */
+}
 
 .navbar-text{
 font-size: 40px;
