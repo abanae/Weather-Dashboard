@@ -110,10 +110,10 @@ function forecast(cityId) {
             let tempF = (((tempK - 273.5) * 1.80) + 32).toFixed(2);
             let humidity = response.list[((i + 1) * 8) - 1].main.humidity;
 
-            $("#fDate" + i).html(date);
-            $("#fImg" + i).html("<img src=" + iconUrl + ">");
-            $("#fTemp" + i).html(tempF + "&#8457");
-            $("#fHumidity" + i).html(humidity + "%");
+            $("#date" + i).html(date);
+            $("#icon" + i).html("<img src=" + iconUrl + ">");
+            $("#temp" + i).html(tempF + "&#8457");
+            $("#hum" + i).html(humidity + "%");
         }
 
     });
