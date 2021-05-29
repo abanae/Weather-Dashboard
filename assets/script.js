@@ -36,17 +36,16 @@ function currentWeather(city){
         url:queryURL,
         method:"GET",
     }).then(function(response){
-
-//         // parse the response to display the current weather including the City name. the Date and the weather icon. 
-//         console.log(response);
-//         //Dta object from server side Api for icon property.
-//         var weathericon= response.weather[0].icon;
-//         var iconurl="https://openweathermap.org/img/wn/"+weathericon +"@2x.png";
-//         // The date format method is taken from the  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-//         var date=new Date(response.dt*1000).toLocaleDateString();
-//         //parse the response for name of city and concanatig the date and icon.
-//         $(currentCity).html(response.name +"("+date+")" + "<img src="+iconurl+">");
-//         // parse the response to display the current temperature.
+        console.log(response);
+        
+        // //Dta object from server side Api for icon property.
+        // var weathericon= response.weather[0].icon;
+        // var iconurl="https://openweathermap.org/img/wn/"+weathericon +"@2x.png";
+        // // The date format method is taken from the  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+        // var date=new Date(response.dt*1000).toLocaleDateString();
+        // //parse the response for name of city and concanatig the date and icon.
+        // $(currentCity).html(response.name +"("+date+")" + "<img src="+iconurl+">");
+        // // parse the response to display the current temperature.
 //         // Convert the temp to fahrenheit
 
 //         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
