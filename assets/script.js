@@ -49,12 +49,14 @@ function currentWeather(city){
         let tempF = (response.main.temp - 273.15) * 1.80 + 32;
         $(currentTemp).html((tempF).toFixed(2)+"&#8457");
 
-//         // Display the Humidity
-//         $(currentHumidity).html(response.main.humidity+"%");
+//       //Current Humidity
+        $(currentHumidity).html(response.main.humidity+"%");
+
 //         //Display Wind speed and convert to MPH
 //         var ws=response.wind.speed;
 //         var windsmph=(ws*2.237).toFixed(1);
 //         $(currentWind).html(windsmph+"MPH");
+
 //         // Display UVIndex.
 //         //By Geographic coordinates method and using appid and coordinates as a parameter we are going build our uv query url inside the function below.
 //         UVIndex(response.coord.lon,response.coord.lat);
