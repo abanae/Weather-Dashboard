@@ -31,7 +31,7 @@ function displayWeather(event){
 
 // GET Function
 function currentWeather(city){
-    var queryURL= "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + apiKey ;
+    let queryURL= "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + apiKey ;
     $.ajax({
         url:queryURL,
         method:"GET",
