@@ -19,16 +19,15 @@ function find(c){
     return 1;
 }
 
-// //API key
-// let apiKey ="a0aca8a89948154a4182dcecc780b513";
-
-// function displayWeather(event){
-//     event.preventDefault();
-//     if(searchForCity.val().trim()!==""){
-//         city=searchForCity.val().trim();
-//         currentWeather(city);
-//     }
-// }
+//API key Function
+let apiKey ="a0aca8a89948154a4182dcecc780b513";
+function displayWeather(event){
+    event.preventDefault();
+    if(searchForCity.val().trim()!==""){
+        city=searchForCity.val().trim();
+        currentWeather(city);
+    }
+}
 
 // // Here we create the AJAX call
 // function currentWeather(city){
