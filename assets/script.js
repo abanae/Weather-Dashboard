@@ -42,14 +42,13 @@ function currentWeather(city){
         let weatherIcon= response.weather[0].icon;
         let iconUrl="https://openweathermap.org/img/wn/"+weatherIcon +"@2x.png";
         let date=new Date(response.dt*1000).toLocaleDateString();
-        
+
         $(currentCity).html(response.name +"("+date+")" + "<img src="+iconUrl+">");
        
-        // parse the response to display the current temperature.
-//         // Convert the temp to fahrenheit
+        // Convert temp to degrees
+        let tempF = (response.main.temp - 273.15) * 1.80 + 32;
+        $(currentTemp).html((tempF).toFixed(2)+"&#8457");
 
-//         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
-//         $(currentTemp).html((tempF).toFixed(2)+"&#8457");
 //         // Display the Humidity
 //         $(currentHumidity).html(response.main.humidity+"%");
 //         //Display Wind speed and convert to MPH
