@@ -82,17 +82,16 @@ function currentWeather(city){
     });
 }
 
-//     // This function returns the UVIindex response.
-// function UvIndex(ln,lt){
-//     //lets build the url for uvIndex.
-//     var uvqURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ apiKey +"&lat="+lt+"&lon="+ln;
-//     $.ajax({
-//             url:uvqURL,
-//             method:"GET"
-//             }).then(function(response){
-//                 $(currentUv).html(response.value);
-//             });
-// }
+    // UVIindex Function
+function UvIndex(ln,lt){
+    let uvURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ apiKey +"&lat="+lt+"&lon="+ln;
+    $.ajax({
+            url:uvURL,
+            method:"GET"
+            }).then(function(response){
+                $(currentUv).html(response.value);
+            });
+}
     
 // // Here we display the 5 days forecast for the current city.
 // function forecast(cityid){
