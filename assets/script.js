@@ -57,35 +57,34 @@ function currentWeather(city){
         let windSpeed=(wS*2.237).toFixed(1);
         $(currentWind).html(windSpeed+"MPH");
 
-//         // Display UVIndex.
-//         //By Geographic coordinates method and using appid and coordinates as a parameter we are going build our uv query url inside the function below.
-//         UVIndex(response.coord.lon,response.coord.lat);
-//         forecast(response.id);
-//         if(response.cod==200){
-//             inputCity=JSON.parse(localStorage.getItem("cityname"));
-//             console.log(inputCity);
-//             if (inputCity==null){
-//                 inputCity=[];
-//                 inputCity.push(city.toUpperCase()
-//                 );
-//                 localStorage.setItem("cityname",JSON.stringify(inputCity));
-//                 addToList(city);
-//             }
-//             else {
-//                 if(find(city)>0){
-//                     inputCity.push(city.toUpperCase());
-//                     localStorage.setItem("cityname",JSON.stringify(inputCity));
-//                     addToList(city);
-//                 }
-//             }
-//         }
+        // UVIndex Forloop
+        UvIndex(response.coord.lon,response.coord.lat);
+        forecast(response.id);
+        if(response.cod==200){
+            inputCity=JSON.parse(localStorage.getItem("cityname"));
+            console.log(inputCity);
+            if (inputCity==null){
+                inputCity=[];
+                inputCity.push(city.toUpperCase()
+                );
+                localStorage.setItem("cityname",JSON.stringify(inputCity));
+                addToList(city);
+            }
+            else {
+                if(find(city)>0){
+                    inputCity.push(city.toUpperCase());
+                    localStorage.setItem("cityname",JSON.stringify(inputCity));
+                    addToList(city);
+                }
+            }
+        }
 
-//     });
-// }
+    });
+}
 
 //     // This function returns the UVIindex response.
-// function UVIndex(ln,lt){
-//     //lets build the url for uvindex.
+// function UvIndex(ln,lt){
+//     //lets build the url for uvIndex.
 //     var uvqURL="https://api.openweathermap.org/data/2.5/uvi?appid="+ apiKey +"&lat="+lt+"&lon="+ln;
 //     $.ajax({
 //             url:uvqURL,
