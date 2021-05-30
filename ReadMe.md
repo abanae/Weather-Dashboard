@@ -12,7 +12,7 @@ Using OpenWeather API,this app displays current weather and a five-day forecast.
 
 
 ## FINAL RESULTS:
-![Video of Deployed URL]()
+![Video of Deployed URL](https://media.giphy.com/media/ahzWxNzPKJ0AuKUGcY/giphy.gif)
 
 
 ### LINK TO DEPLOYED URL :
