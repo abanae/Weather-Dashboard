@@ -30,7 +30,8 @@ font-size: 40px;
 }
 
 #future-weather{
- margin-top: 50px; 
+ margin-top: 50px;
+ min-width: 140%;
 }
 .row{
 min-width: 200%;
